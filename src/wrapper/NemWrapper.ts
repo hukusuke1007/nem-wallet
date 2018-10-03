@@ -4,7 +4,7 @@ export default class NemWrapper {
     private endpoint: string
     private host: string = process.env.NEM_NODE_HOST
     private port: string = process.env.NEM_NODE_PORT
-    private net: string = process.env.NEM_NET
+    private net: number = Number(process.env.NEM_NET)
     constructor() {
         // Setting network and nis.
         // this.net = nem.model.network.data.mainnet.id
@@ -29,6 +29,7 @@ export default class NemWrapper {
         const wallet = nem.model.wallet.createPRNG(walletName, password, this.net)
         const common = nem.model.objects.create('common')(password, '')
         const account = wallet.accounts[0]
+        console.log('createAccount', account)
         nem.crypto.helpers.passwordToPrivatekey(common, account, account.algo)
         return {
             address: account.address,

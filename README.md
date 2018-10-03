@@ -24,7 +24,7 @@ yarn build
 Rename file to ".env" from "dotenvsample" and set node url and port in .env.
 ``` 
 # mainnet:104, testnet:-104, mijin:96
-NEM_NET = '104'
+NEM_NET = 104
 
 # Node URL
 NEM_NODE_HOST = 'https://aqualife2.supernode.me'
