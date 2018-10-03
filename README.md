@@ -28,7 +28,7 @@ NEM_NET = 104
 
 # Node URL
 NEM_NODE_HOST = 'https://aqualife2.supernode.me'
-NEM_NODE_PORT = '7891
+NEM_NODE_PORT = '7891'
 ```
 This node is mainnet in NEM network.<br>
 
