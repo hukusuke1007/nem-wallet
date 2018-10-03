@@ -4,10 +4,11 @@ export default class NemWrapper {
     private endpoint: string
     private host: string = process.env.NEM_NODE_HOST
     private port: string = process.env.NEM_NODE_PORT
-    private net: string
+    private net: string = process.env.NEM_NET
     constructor() {
         // Setting network and nis.
-        this.net = nem.model.network.data.mainnet.id
+        // this.net = nem.model.network.data.mainnet.id
+        console.log(this.host, this.port, this.net)
         this.endpoint = nem.model.objects.create('endpoint')(this.host, this.port)
     }
 

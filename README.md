@@ -23,10 +23,16 @@ yarn build
 ### Prepare .env
 Rename file to ".env" from "dotenvsample" and set node url and port in .env.
 ``` 
+# mainnet:104, testnet:-104, mijin:96
+NEM_NET = '104'
+
+# Node URL
 NEM_NODE_HOST = 'https://aqualife2.supernode.me'
 NEM_NODE_PORT = '7891
 ```
-※this node is main net in NEM network.<br>
+This node is mainnet in NEM network.<br>
+
+If use testnet, you must set net/host/port for testnet.
 
 ### Run localhost.
 Please run the following command. Then run NEM wallet in localhost.
