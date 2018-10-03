@@ -1,0 +1,4 @@
+## Rename file dotenvsample -> .env
+# Node URL
+NEM_NODE_HOST = 'https://aqualife2.supernode.me'
+NEM_NODE_PORT = '7891
