@@ -18,7 +18,7 @@
           </v-card-actions>
           <v-card-text>{{ wallet.balance }} xem</v-card-text>
           <v-card-title>
-            <h3>To address</h3>
+            <h3>Address</h3>
           </v-card-title>
           <v-card-text>{{ wallet.address }}</v-card-text>
           <v-card flat><qriously v-model="qrJson" :size="qrSize" ></qriously></v-card>
@@ -35,7 +35,7 @@
             v-model="toAddr"
             :counter="40"
             required
-            placeholder="例. NBHWRG6STRXL2FGLEEB2UOUCBAQ27OSGDTO44UFC"
+            placeholder="ex). NBHWRG6STRXL2FGLEEB2UOUCBAQ27OSGDTO44UFC"
           ></v-text-field>
           <v-text-field
             label="NEM"
@@ -151,11 +151,10 @@ export default class Wallet extends Vue {
   }
 }
 </script>
-<style scoped>
-.wallet {
-  word-break: break-all;
-}
-.errorLabel {
-  color: red;
-}
+<style lang="stylus" scoped>
+.wallet
+  word-break break-all
+
+.errorLabel
+  color red
 </style>
