@@ -102,12 +102,10 @@ export default class Wallet extends Vue {
 
   @Watch('wallet.address')
   private onValueChange(newValue: string, oldValue: string): void {
-    console.log(`watch: ${newValue}, ${oldValue}`)
-    this.qrJson = NemUtil.getQRcodeJson('2', 2, '', newValue, 0, '')
+    this.qrJson = NemUtil.getQRcodeJson(2, 2, 'nem-wallet', newValue, 0, '')
   }
 
   private mounted() {
-    console.log('hello')
     Vue.prototype.$toast('Hello self made NEM wallet')
   }
 
@@ -123,7 +121,6 @@ export default class Wallet extends Vue {
       this.isLoading = true
       try {
         const result = await this.wallet.sendNem(this.toAddr, this.toAmount, this.message)
-        console.log(result)
         const message = result.message + ': \n' + result.transactionHash.data
         if (result.message === 'SUCCESS') {
           this.resultMessage = result.transactionHash.data

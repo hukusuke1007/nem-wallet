@@ -5,13 +5,12 @@
     </header>
     <main>
       <Wallet/>
-      <!-- <router-view></router-view> -->
     </main>
   </v-app>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import Wallet from '@/components/Wallet.vue'; // @ is an alias to /src
+import Wallet from '@/components/Wallet.vue'
 
 @Component({
   components: {
