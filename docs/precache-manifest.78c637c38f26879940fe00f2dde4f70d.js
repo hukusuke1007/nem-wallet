@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/nem-wallet/js/app.c2415abc.js"
   },
   {
-    "revision": "0897d218014e3da1ad975144fd16d2bc",
+    "revision": "d6712a9b771caccb9258f5d2ce711343",
     "url": "/nem-wallet/index.html"
   },
   {
