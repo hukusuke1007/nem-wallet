@@ -106,7 +106,7 @@ export default class Wallet extends Vue {
   }
 
   private mounted() {
-    Vue.prototype.$toast('Hello self made NEM wallet')
+    Vue.prototype.$toast('Hello NEM wallet')
   }
 
   private async getAccount() {

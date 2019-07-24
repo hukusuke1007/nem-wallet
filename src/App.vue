@@ -18,7 +18,7 @@ import Wallet from '@/components/Wallet.vue'
   },
 })
 export default class App extends Vue {
-  private title = 'Self made NEM wallet'
+  private title = 'NEM wallet'
 }
 </script>
 <style lang="stylus">

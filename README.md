@@ -1,8 +1,8 @@
 # NEM wallet
-> This is a self made NEM wallet.
+> This is NEM wallet.
 
 ## Description
-This is a self made NEM wallet.
+This is NEM wallet.
 
 ## Project setup
 ```
